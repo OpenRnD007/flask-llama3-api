@@ -3,7 +3,7 @@
 
 This platform offers a sophisticated chat interface that allows you to query and analyze your private documents with utmost discretion.
 We are using Meta llama3 for offline LLM and Flask for exposing API  
-
+[Frontend](https://github.com/OpenRnD007/react-llama3-frontend)
 
 ## Features
 
@@ -53,6 +53,10 @@ The server will start on http://localhost:5000/.
 For gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/OpenRnD007/flask-llama3-api)
+
+## DEMO
+[![flask llama3 api backend](http://img.youtube.com/vi/NbXgNtWACVQ/0.jpg)](http://www.youtube.com/watch?v=NbXgNtWACVQ "flask llama3 api backend")
+[![react llama3 frontend](http://img.youtube.com/vi/fP5YRIFh6os/0.jpg)](http://www.youtube.com/watch?v=fP5YRIFh6os "react llama3 frontend")
 
 ## Usage/Examples
 
