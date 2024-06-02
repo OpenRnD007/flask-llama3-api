@@ -1,0 +1,15 @@
+pip install --upgrade --quiet  langchain langchain-community langchainhub langchain-openai langchain-chroma bs4 pypdf rapidocr-onnxruntime
+pip install Flask flask-cors
+curl -fsSL https://ollama.com/install.sh | sh
+#ollama serve
+
+while true; do nohup ollama serve >/dev/null 2>&1; sleep 5; done >/dev/null 2>&1 &
+
+sleep 60
+
+ollama pull llama3
+ollama pull nomic-embed-text
+
+#curl -X POST http://localhost:5000/api/fileupload -F "file=@66565e430ecefa65f5ccdf9b.pdf" -F "filetype=pdf" -F "collection_name=patient_rags"
+
+#curl -X POST http://localhost:5000/api/askquestion -H "Content-Type: application/json" -d '{"question":"can you give me chargeticket summary", "collection_name":"patient_rags"}'
