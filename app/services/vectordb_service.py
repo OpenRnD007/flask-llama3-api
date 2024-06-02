@@ -54,6 +54,6 @@ def get_loader(file_type, file_path):
     elif file_type == 'csv':
         return CSVLoader(file_path)
     elif file_type == 'json':
-        return JSONLoader(file_path)
+        return JSONLoader(file_path=file_path, jq_schema='.', text_content=False)
     else:
         return None
